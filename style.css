@@ -358,6 +358,10 @@ html {
   background: #111113;
 }
 
+.section-badge {
+  margin-top: 25px;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
