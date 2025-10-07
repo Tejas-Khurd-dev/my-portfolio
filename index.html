@@ -4,69 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tejas Khurd</title>
-    <meta
-      name="description"
-      content="Tejas Khurd - Software Developer specializing in Python, Web Development, and innovative digital solutions."
-    />
-
-    <meta
-      name="keywords"
-      content="Tejas Khurd, Software Developer, Python Developer, Web Development, Professional Portfolio"
-    />
-    <meta name="author" content="Tejas Khurd" />
-
     <link
-      rel="icon"
-      type="image/svg+xml"
-      href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="white" d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/></svg>'
-    />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
     />
 
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
   </head>
-
-  <body
-    data-bs-spy="scroll"
-    data-bs-target="#navbarNav"
-    data-bs-smooth-scroll="true"
-  >
+  <body>
     <header>
-      <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#home"
-            ><i class="bi bi-braces"></i> Tejas Khurd</a
-          >
-
+      <!-- 
+        Header
+        -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#home"><span class="tejas-logo"><i class="bi bi-code-slash"></i></span> Tejas Khurd</a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
+            class="collapse navbar-collapse justify-content-center justify-content-lg-end"
+            id="navbarSupportedContent"
           >
-            <ul class="navbar-nav">
+            <ul class="navbar-nav mb-2 mb-lg-0 text-center">
               <li class="nav-item">
                 <a class="nav-link" href="#home">Home</a>
               </li>
@@ -74,13 +49,13 @@
                 <a class="nav-link" href="#about-me">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#skills-me">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#projects-me">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#contact-me">Contact</a>
               </li>
             </ul>
           </div>
@@ -89,403 +64,505 @@
     </header>
 
     <main>
-      <section id="home" class="me">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <div class="me-content">
-                <div class="me-badge">
-                  <span class="status-dot"></span>
-                  Available for opportunities
-                </div>
+      <section id="home">
+        <!-- 
+        Home
+        -->
+        <div class="home">
+          <div class="left-home">
+            <h1>Hi, I'm Tejas Khurd</h1 >
+            <p>
+              Computer Engineering student specializing in Python development,
+              web technologies, and building practical solutions through clean,
+              efficient code.
+            </p>
 
-                <h1>Computer <span class="me-highlight">Engineer</span></h1>
+            <div class="button-group">
+              <button type="button" class="btn btn-custom btn-primary-custom"
+                      onclick="document.querySelector('.project-section').scrollIntoView({ behavior: 'smooth' });">
+                View Projects
+              </button>
 
-                <p class="me-subtitle">
-                  Computer Engineering student specializing in Python
-                  development, web technologies, and building practical
-                  solutions through clean, efficient code.
-                </p>
-
-                <div class="me-cta">
-                  <a href="#projects" class="btn-professional btn-primary-pro">
-                    <i class="bi bi-folder"></i>
-                    View Projects
-                  </a>
-                  <a href="#contact" class="btn-professional btn-secondary-pro">
-                    <i class="bi bi-envelope"></i>
-                    Get In Touch
-                  </a>
-                </div>
-
-                <div class="me-stats">
-                  <div class="stat-item">
-                    <div class="stat-number">10+</div>
-                    <div class="stat-label">Projects</div>
-                  </div>
-                  <div class="stat-item">
-                    <div class="stat-number">5+</div>
-                    <div class="stat-label">Tech Stack</div>
-                  </div>
-                </div>
-              </div>
+              <button type="button" class="btn btn-custom btn-secondary-custom"
+                      onclick="document.querySelector('.contact').scrollIntoView({ behavior: 'smooth' });">
+                Contact Me
+              </button>
             </div>
 
-            <div class="col-lg-6">
-              <div class="me-visual">
-                <div class="code-card">
-                  <div class="code-header">
-                    <div class="code-icon">
-                      <i class="bi bi-code-slash"></i>
-                    </div>
-                    <div class="code-info">
-                      <h4>developer.py</h4>
-                      <p>Professional codebase</p>
-                    </div>
-                  </div>
-                  <div class="code-content">
-                    <div class="code-line">
-                      <span class="code-keyword">class</span> SoftwareDeveloper:
-                    </div>
-                    <div class="code-line">
-                      <span class="code-keyword">def</span> __init__(self,
-                      name):
-                    </div>
-                    <div class="code-line">
-                      self.name = <span class="code-string">"Tejas Khurd"</span>
-                    </div>
-                    <div class="code-line">
-                      self.skills = [<span class="code-string">"Python"</span>,
-                      <span class="code-string">"Web Dev"</span>]
-                    </div>
-                    <div class="code-line">
-                      self.focus =
-                      <span class="code-string">"Quality Solutions"</span>
-                    </div>
-                  </div>
-                </div>
+            <div class="stats-container">
+              <div class="stat-item">
+                <p>10+</p>
+                <p>Projects</p>
               </div>
+              <div class="stat-item">
+                <p>5+</p>
+                <p>Tech Stack</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card right-home">
+            <div class="tools">
+              <div class="circle">
+                <span class="red box"></span>
+              </div>
+              <div class="circle">
+                <span class="yellow box"></span>
+              </div>
+              <div class="circle">
+                <span class="green box"></span>
+              </div>
+            </div>
+            <div class="card__content">
+              <p>class SoftwareDeveloper:</p>
+              <p>def __init__(self, name):</p>
+              <p>self.name = "Tejas Khurd"</p>
+              <p>self.skills = ["Python", "Web Dev"]</p>
+              <p>self.focus = "Quality Solutions"</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="about-me" class="section about-section">
-        <div class="container">
-          <div class="section-header">
-            <div class="section-badge">About</div>
-            <h2 class="section-title">About Me</h2>
-            <p class="section-subtitle">
-              Dedicated Computer Engineering student focused on developing
-              practical software solutions and continuous learning.
-            </p>
+      <section class="about-section" id="about-me">
+        <!-- 
+        About Me
+        -->
+        <div class="about-btn-div">
+          <button class="about-btn">About</button>
+        </div>
+
+        <div class="about-center">
+          <h2>About Me</h2>
+          <p>
+            Dedicated Computer Engineering student focused on developing
+            practical software solutions and continuous learning.
+          </p>
+        </div>
+
+        <div class="about-content">
+          <div>
+            <img
+              src="./assets/images/avatar.jpg"
+              alt="tejas_image"
+              class="tejas-image"
+            />
           </div>
 
-          <div class="about-grid">
-            <div class="text-center">
-              <div class="about-avatar">
-                <img src="./assets/images/avatar.jpg" height="250" alt="" />
-              </div>
-            </div>
-            <div class="about-content">
-              <h3>Software Development Journey</h3>
-              <p class="about-text">
-                Currently pursuing Computer Engineering at Vidyavardhini
-                College, I focus on building practical software solutions that
-                solve real-world problems. My approach emphasizes clean code,
-                efficient algorithms, and user-centered design.
-              </p>
-              <p class="about-text">
-                I specialize in Python development and modern web technologies,
-                with experience in game development, automation tools, and
-                interactive applications. My goal is to create software that is
-                both functional and maintainable.
-              </p>
-              <p class="about-text">
-                Through various projects and continuous learning, I've developed
-                strong problem-solving skills and a systematic approach to
-                software development, always focusing on code quality and best
-                practices.
-              </p>
+          <div>
+            <h1>Software Development Journey</h1>
+            <p>
+              Currently pursuing Computer Engineering at Vidyavardhini College,
+              I focus on building practical software solutions that solve
+              real-world problems. My approach emphasizes clean code, efficient
+              algorithms, and user-centered design.
+            </p>
+            <p>
+              I specialize in Python development and modern web technologies,
+              with experience in game development, automation tools, and
+              interactive applications. My goal is to create software that is
+              both functional and maintainable.
+            </p>
 
-              <div class="about-highlights">
-                <div class="highlight-item">
-                  <div class="highlight-icon">
-                    <i class="bi bi-code"></i>
-                  </div>
-                  <span class="highlight-text">Clean Code Advocate</span>
-                </div>
-                <div class="highlight-item">
-                  <div class="highlight-icon">
-                    <i class="bi bi-puzzle"></i>
-                  </div>
-                  <span class="highlight-text">Problem Solver</span>
-                </div>
-                <div class="highlight-item">
-                  <div class="highlight-icon">
-                    <i class="bi bi-graph-up"></i>
-                  </div>
-                  <span class="highlight-text">Continuous Learner</span>
-                </div>
-                <div class="highlight-item">
-                  <div class="highlight-icon">
-                    <i class="bi bi-check-circle"></i>
-                  </div>
-                  <span class="highlight-text">Quality Focused</span>
-                </div>
-              </div>
+            <p>
+              Through various projects and continuous learning, I've developed
+              strong problem-solving skills and a systematic approach to
+              software development, always focusing on code quality and best
+              practices.
+            </p>
+
+            <div class="about-highlight-container">
+              <p class="about-highlight">
+                <i class="bi bi-code"></i> Clean Code Advocate
+              </p>
+              <p class="about-highlight">
+                <i class="bi bi-puzzle"></i> Problem Solver
+              </p>
+              <p class="about-highlight">
+                <i class="bi bi-graph-up"></i> Continuous Learner
+              </p>
+              <p class="about-highlight">
+                <i class="bi bi-check-circle"></i> Quality Focused
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="skills" class="section skills-section">
-        <div class="container">
-          <div class="section-header">
-            <div class="section-badge">Skills</div>
-            <h2 class="section-title">Technical Expertise</h2>
-            <p class="section-subtitle">
-              Core competencies in software development and emerging
-              technologies
+      <section id="skills-me">
+        <!-- 
+        skill
+        -->
+
+        <div class="skill-btn-div">
+          <button class="skill-btn">Skills</button>
+        </div>
+
+        <div class="skill-center">
+          <h2>Technical Expertise</h2>
+          <p>
+            Core competencies in software development and emerging technologies
+          </p>
+        </div>
+
+        <div class="skill-container">
+          <!-- From Uiverse.io by 00Kubi -->
+          <div class="skill-card">
+            <div class="align">
+              <span class="red"></span>
+              <span class="yellow"></span>
+              <span class="green"></span>
+            </div>
+
+            <h1>Python Development</h1>
+            <p>
+              I specialize in Python development, focusing on writing clean,
+              efficient, and scalable code.
             </p>
           </div>
 
-          <div class="skills-grid">
-            <div class="skill-card">
-              <div class="skill-icon">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <h3 class="skill-title">Python Development</h3>
+          <div class="skill-card">
+            <div class="align">
+              <span class="red"></span>
+              <span class="yellow"></span>
+              <span class="green"></span>
             </div>
 
-            <div class="skill-card">
-              <div class="skill-icon">
-                <i class="bi bi-window"></i>
-              </div>
-              <h3 class="skill-title">HTML/CSS</h3>
+            <h1>Frontend</h1>
+            <p>
+              I have a strong passion for creating clean, responsive, and
+              user-friendly web interfaces.
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <div class="align">
+              <span class="red"></span>
+              <span class="yellow"></span>
+              <span class="green"></span>
             </div>
 
-            <div class="skill-card">
-              <div class="skill-icon">
-                <i class="bi bi-git"></i>
-              </div>
-              <h3 class="skill-title">Version Control</h3>
+            <h1>Version Control</h1>
+            <p>
+              I use Git and GitHub extensively to manage code efficiently,
+              collaborate with teams, and maintain clean version histories.
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <div class="align">
+              <span class="red"></span>
+              <span class="yellow"></span>
+              <span class="green"></span>
             </div>
 
-            <div class="skill-card">
-              <div class="skill-icon">
-                <i class="bi bi-lightbulb"></i>
-              </div>
-              <h3 class="skill-title">Problem Solving</h3>
-            </div>
+            <h1>Problem Solving</h1>
+            <p>
+              I have a strong interest in solving real-world problems through
+              logical thinking and efficient coding.
+            </p>
           </div>
         </div>
       </section>
 
-      <section id="projects" class="section projects-section">
-        <div class="container">
-          <div class="section-header">
-            <div class="section-badge">Portfolio</div>
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">
-              A selection of software projects demonstrating technical skills
-              and problem-solving abilities
-            </p>
-          </div>
+      <section class="project-section" id="projects-me">
+        <!-- 
+        Projects
+        -->
 
-          <div class="projects-grid">
-            <div class="project-card">
-              <div class="project-image">
-                <i class="bi bi-bag-check"></i>
-              </div>
-              <div class="project-content">
-                <h3 class="project-title">Myntra Clone</h3>
-                <p class="project-description">
-                  E-commerce website replica featuring responsive design,
-                  product catalog, and modern user interface built with HTML and
-                  CSS.
-                </p>
-                <div class="project-tech">
-                  <span class="tech-tag">HTML</span>
-                  <span class="tech-tag">CSS</span>
-                  <span class="tech-tag">Bootstrap</span>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/Tejas-Khurd-dev/web-development-projects/tree/main/beginner-projects/myntra_clone_static_page"
-                    class="project-link project-link-primary"
-                    target="_blank"
+        <div class="project-btn-div">
+          <button class="project-btn">Projects</button>
+        </div>
+
+        <div class="project-center">
+          <h2>Featured Projects</h2>
+          <p>
+            A selection of software projects demonstrating technical skills and
+            problem-solving abilities
+          </p>
+        </div>
+
+        <div class="project-card-container">
+          <!-- From Uiverse.io by andrew-demchenk0 -->
+          <div class="project-card">
+            <div class="card__img"><i class="bi bi-bag"></i></div>
+            <div class="card__descr-wrapper">
+              <p class="card__title">Myntra Clone</p>
+              <p class="card__descr">
+                E-commerce website replica featuring responsive design, product
+                catalog, and modern user interface built with HTML and CSS.
+              </p>
+              <div class="card__links">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                    class="svg"
+                    fill="#ffffff"
                   >
-                    <i class="bi bi-github"></i>
-                    Source Code
-                  </a>
+                    <path
+                      d="M562.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L405.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C189.5 251.2 196 330 246 380c56.5 56.5 148 56.5 204.5 0L562.8 267.7zM43.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C57 372 57 321 88.5 289.5L200.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C416.5 260.8 410 182 360 132c-56.5-56.5-148-56.5-204.5 0L43.2 244.3z"
+                    />
+                  </svg>
                   <a
+                    class="link"
                     href="https://tejas-khurd-dev.github.io/css-dev-portfolio/"
-                    class="project-link project-link-secondary"
+                    >Preview</a
                   >
-                    <i class="bi bi-eye"></i>
-                    View Demo
-                  </a>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512"
+                    class="svg"
+                    fill="#ffffff"
+                  >
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    />
+                  </svg>
+                  <a
+                    class="link"
+                    href="https://github.com/Tejas-Khurd-dev/web-development-projects/tree/main/beginner-projects/myntra_clone_static_page"
+                    >Code</a
+                  >
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="project-card">
-              <div class="project-image">
-                <i class="bi bi-joystick"></i>
-              </div>
-              <div class="project-content">
-                <h3 class="project-title">Snake Game</h3>
-                <p class="project-description">
-                  Classic Snake game implementation with smooth gameplay
-                  mechanics, score tracking, and collision detection using
-                  Python and Pygame library.
-                </p>
-                <div class="project-tech">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">Pygame</span>
-                  <span class="tech-tag">Game Logic</span>
-                </div>
-                <div class="project-links">
+          <div class="project-card">
+            <div class="card__img"><i class="bi bi-controller"></i></div>
+            <div class="card__descr-wrapper">
+              <p class="card__title">Snake Game</p>
+              <p class="card__descr">
+                Classic Snake game implementation with smooth gameplay
+                mechanics, score tracking, and collision detection using Python
+                and Pygame library.
+              </p>
+              <div class="card__links">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                    class="svg"
+                    fill="#ffffff"
+                  >
+                    <path
+                      d="M562.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L405.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C189.5 251.2 196 330 246 380c56.5 56.5 148 56.5 204.5 0L562.8 267.7zM43.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C57 372 57 321 88.5 289.5L200.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C416.5 260.8 410 182 360 132c-56.5-56.5-148-56.5-204.5 0L43.2 244.3z"
+                    />
+                  </svg>
                   <a
+                    class="link"
+                    href="https://www.linkedin.com/posts/tejas-khurd_python-pygame-gamedevelopment-activity-7374089774443196416-p6uj?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF2GeeQB5RwxpemUvv4PzDzV_VQv4p2JPLY"
+                    >Preview</a
+                  >
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512"
+                    class="svg"
+                    fill="#ffffff"
+                  >
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    />
+                  </svg>
+
+                  <a
+                    class="link"
                     href="https://github.com/Tejas-Khurd-dev/python-projects/tree/main/intermediate_projects/snake_game"
-                    class="project-link project-link-primary"
-                    target="_blank"
+                    >Code</a
                   >
-                    <i class="bi bi-github"></i>
-                    Source Code
-                  </a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="project-card">
-              <div class="project-image">
-                <i class="bi bi-suit-spade"></i>
-              </div>
-              <div class="project-content">
-                <h3 class="project-title">Blackjack Game</h3>
-                <p class="project-description">
-                  Console-based Blackjack card game with dealer AI, proper game
-                  rules implementation, and user-friendly interface for an
-                  authentic gaming experience.
-                </p>
-                <div class="project-tech">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">Logic</span>
-                  <span class="tech-tag">Game AI</span>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/Tejas-Khurd-dev/python-projects/tree/main/intermediate_projects/black_jack_game"
-                    class="project-link project-link-primary"
-                    target="_blank"
+          <div class="project-card">
+            <div class="card__img"><i class="bi bi-calculator"></i></i></div>
+            <div class="card__descr-wrapper">
+              <p class="card__title">Web Calculator</p>
+              <p class="card__descr">
+                A compact, console-friendly web calculator that provides a accurate and accessible calculation experience. Implemented in  HTML, CSS and js.
+              </p>
+              <div class="card__links">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                    class="svg"
+                    fill="#ffffff"
                   >
-                    <i class="bi bi-github"></i>
-                    Source Code
-                  </a>
+                    <path
+                      d="M562.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L405.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C189.5 251.2 196 330 246 380c56.5 56.5 148 56.5 204.5 0L562.8 267.7zM43.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C57 372 57 321 88.5 289.5L200.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C416.5 260.8 410 182 360 132c-56.5-56.5-148-56.5-204.5 0L43.2 244.3z"
+                    />
+                  </svg>
+                  <a
+                    class="link"
+                    href="https://tejas-calculator.vercel.app/"
+                    >Preview</a
+                  >
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512"
+                    class="svg"
+                    fill="#ffffff"
+                  >
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    />
+                  </svg>
+                  <a
+                    class="link"
+                    href="https://github.com/Tejas-Khurd-dev/web-development-projects/tree/main/beginner-projects/calculator_project"
+                    >Code</a
+                  >
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="project-card">
-              <div class="project-image">
-                <i class="bi bi-cup-hot"></i>
-              </div>
-              <div class="project-content">
-                <h3 class="project-title">Coffee Machine Software</h3>
-                <p class="project-description">
-                  Interactive coffee machine simulation with inventory
-                  management, payment processing, and resource tracking
-                  functionality.
-                </p>
-                <div class="project-tech">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">CLI</span>
-                  <span class="tech-tag">System Design</span>
-                </div>
-                <div class="project-links">
+          <div class="project-card">
+            <div class="card__img"><i class="bi bi-cup-hot"></i></div>
+            <div class="card__descr-wrapper">
+              <p class="card__title">Coffee Machine Software</p>
+              <p class="card__descr">
+                Interactive coffee machine simulation with inventory management,
+                payment processing, and resource tracking functionality.
+              </p>
+              <div class="card__links">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                    class="svg"
+                    fill="#ffffff"
+                  >
+                    <path
+                      d="M562.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L405.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C189.5 251.2 196 330 246 380c56.5 56.5 148 56.5 204.5 0L562.8 267.7zM43.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C57 372 57 321 88.5 289.5L200.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C416.5 260.8 410 182 360 132c-56.5-56.5-148-56.5-204.5 0L43.2 244.3z"
+                    />
+                  </svg>
                   <a
+                    class="link"
                     href="https://github.com/Tejas-Khurd-dev/python-projects/tree/main/intermediate_projects/coffee_machine_software"
-                    class="project-link project-link-primary"
-                    target="_blank"
+                    >Preview</a
                   >
-                    <i class="bi bi-github"></i>
-                    Source Code
-                  </a>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512"
+                    class="svg"
+                    fill="#ffffff"
+                  >
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    />
+                  </svg>
+                  <a
+                    class="link"
+                    href="https://github.com/Tejas-Khurd-dev"
+                    >Profile</a
+                  >
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="project-card">
-              <div class="project-image">
-                <i class="bi bi-collection"></i>
-              </div>
-              <div class="project-content">
-                <h3 class="project-title">Python Projects Repository</h3>
-                <p class="project-description">
-                  Comprehensive collection of Python projects showcasing
-                  programming fundamentals and application development skills.
-                </p>
-                <div class="project-tech">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">Coding</span>
-                  <span class="tech-tag">Developer</span>
-                </div>
-                <div class="project-links">
+          <div class="project-card">
+            <div class="card__img"><i class="bi bi-folder"></i></div>
+            <div class="card__descr-wrapper">
+              <p class="card__title">Python Projects Repository</p>
+              <p class="card__descr">
+                Comprehensive collection of Python projects showcasing
+                programming fundamentals and application development skills.
+              </p>
+              <div class="card__links">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                    class="svg"
+                    fill="#ffffff"
+                  >
+                    <path
+                      d="M562.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L405.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C189.5 251.2 196 330 246 380c56.5 56.5 148 56.5 204.5 0L562.8 267.7zM43.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C57 372 57 321 88.5 289.5L200.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C416.5 260.8 410 182 360 132c-56.5-56.5-148-56.5-204.5 0L43.2 244.3z"
+                    />
+                  </svg>
                   <a
+                    class="link"
                     href="https://github.com/Tejas-Khurd-dev/python-projects"
-                    class="project-link project-link-primary"
-                    target="_blank"
+                    >Preview</a
                   >
-                    <i class="bi bi-github"></i>
-                    View Repository
-                  </a>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512"
+                    class="svg"
+                    fill="#ffffff"
+                  >
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    />
+                  </svg>
                   <a
+                    class="link"
                     href="https://github.com/Tejas-Khurd-dev"
-                    class="project-link project-link-secondary"
-                    target="_blank"
+                    >Profile</a
                   >
-                    <i class="bi bi-person"></i>
-                    GitHub Profile
-                  </a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="project-card">
-              <div class="project-image">
-                <i class="bi bi-collection"></i>
-              </div>
-              <div class="project-content">
-                <h3 class="project-title">Web Development Repository</h3>
-                <p class="project-description">
-                  Comprehensive collection of web development projects
-                  showcasing website responsiveness and application development
-                  skills.
-                </p>
-                <div class="project-tech">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">Coding</span>
-                  <span class="tech-tag">Developer</span>
-                </div>
-                <div class="project-links">
+          <div class="project-card">
+            <div class="card__img"><i class="bi bi-bag"></i></div>
+            <div class="card__descr-wrapper">
+              <p class="card__title">Web Development Repository</p>
+              <p class="card__descr">
+                Comprehensive collection of web development projects showcasing
+                website responsiveness and application development skills.
+              </p>
+              <div class="card__links">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                    class="svg"
+                    fill="#ffffff"
+                  >
+                    <path
+                      d="M562.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L405.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C189.5 251.2 196 330 246 380c56.5 56.5 148 56.5 204.5 0L562.8 267.7zM43.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C57 372 57 321 88.5 289.5L200.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C416.5 260.8 410 182 360 132c-56.5-56.5-148-56.5-204.5 0L43.2 244.3z"
+                    />
+                  </svg>
+
                   <a
+                    class="link"
                     href="https://github.com/Tejas-Khurd-dev/web-development-projects"
-                    class="project-link project-link-primary"
-                    target="_blank"
+                    >Preview</a
                   >
-                    <i class="bi bi-github"></i>
-                    View Repository
-                  </a>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512"
+                    class="svg"
+                    fill="#ffffff"
+                  >
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    />
+                  </svg>
                   <a
+                    class="link"
                     href="https://github.com/Tejas-Khurd-dev"
-                    class="project-link project-link-secondary"
-                    target="_blank"
+                    >Profile</a
                   >
-                    <i class="bi bi-person"></i>
-                    GitHub Profile
-                  </a>
                 </div>
               </div>
             </div>
@@ -493,80 +570,123 @@
         </div>
       </section>
 
-      <section id="contact" class="section contact-section">
-        <div class="container">
-          <div class="section-header">
-            <div class="section-badge">Contact</div>
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">
-              Open to discussing opportunities, collaborations, and software
-              development projects
-            </p>
+      <section class="contact" id="contact-me">
+        <!-- 
+        contact
+        -->
+
+        <div class="contact-btn-div">
+          <button class="contact-btn">Contact</button>
+        </div>
+
+        <div class="contact-center">
+          <h2>Get In Touch</h2>
+          <p>
+            Open to discussing opportunities, collaborations, and software
+            development projects
+          </p>
+        </div>
+
+        <div class="social-flex">
+          <div class="social-links">
+            <!-- From Uiverse.io by MijailVillegas -->
+            <div class="social-card">
+              <ul>
+                <li class="iso-pro">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <a href="https://www.linkedin.com/in/tejas-khurd/">
+                    <svg
+                      class="social-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        fill="#ffffff"
+                        d="M100.28 448H7.4V148.9h92.88zm-46.44-340C24.17 108 0 83.81 0 54.44A54.42 54.42 0 0 1 54.44 0C83.81 0 108 24.17 108 54.44a54.43 54.43 0 0 1-54.16 53.56zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.28-79.2-48.32 0-55.7 37.7-55.7 76.6V448H158.5V148.9h89v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                      ></path>
+                    </svg>
+
+                  </a>
+                  <div class="text">Linkedin</div>
+                </li>
+                <li class="iso-pro">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <a href="https://github.com/Tejas-Khurd-dev">
+                    <svg
+                      class="social-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 496 512"
+                    >
+                      <path
+                        fill="#ffffff"
+                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-2.9 .3-5.2-1.3-5.2-3.3 0-2 2.3-3.6 5.2-3.6 2.9-.3 5.2 1.3 5.2 3.3zm-33.1-10.2c-.7 1.6-3.1 2-5.2 1-2.2-1-3.1-2.9-2.3-4.5 .7-1.6 3.1-2 5.2-1 2.1 1 3 2.9 2.3 4.5zm45.2-1.7c-1 1.3-3.9 .7-6.1-1.3-2.3-2-3-4.5-2-5.8 1-1.3 3.9-.7 6.1 1.3 2.3 2 3 4.5 2 5.8zm31.7 3.6c-.3 1.6-2.9 2.6-5.8 2-2.9-.7-5.2-2.6-4.9-4.2 .3-1.6 2.9-2.6 5.8-2 3 .7 5.3 2.6 4.9 4.2zm32.6 0c0 1.6-2.6 2.9-5.8 2.9s-5.8-1.3-5.8-2.9 2.6-2.9 5.8-2.9 5.8 1.3 5.8 2.9zm32.9-1c.3 1.6-2 3.6-4.9 4.2-2.9 .7-5.5-.3-5.8-2-.3-1.6 2-3.6 4.9-4.2 3-.7 5.5 .3 5.8 2zm30.2-5.2c1 1.3 .3 3.9-2 5.8-2.3 2-5.2 2.6-6.1 1.3-1-1.3-.3-3.9 2-5.8 2.3-2 5.2-2.6 6.1-1.3zm25.2-8.1c1.3 1 .7 3.6-1.3 5.8-2 2.3-4.5 3-5.8 2-1.3-1-.7-3.6 1.3-5.8 2-2.3 4.5-3 5.8-2zm16.7-17.1c.7 1.6-.7 3.6-2.9 4.5-2.3 1-4.9 .3-5.5-1.3-.7-1.6 .7-3.6 2.9-4.5 2.2-1 4.8-.3 5.5 1.3zm13.6-25.6c.3 1.6-1.3 3.3-3.6 3.9-2.3 .3-4.2-.7-4.5-2.3-.3-1.6 1.3-3.3 3.6-3.9 2.3-.3 4.2 .7 4.5 2.3zm-11.3-25.3c1 1.3 .3 3.6-1.6 5.2-2 1.6-4.5 2-5.5 .7-1-1.3-.3-3.6 1.6-5.2 2-1.6 4.5-2 5.5-.7zM248 8C111 8 0 119 0 256c0 109.3 70.8 202.1 169.2 234.7 12.3 2.3 16.8-5.3 16.8-11.8 0-5.8-.2-25.2-.3-45.7-68.8 15-83.3-29.7-83.3-29.7-11.2-28.7-27.4-36.3-27.4-36.3-22.4-15.3 1.7-15 1.7-15 24.8 1.7 37.9 25.5 37.9 25.5 22 37.8 57.8 26.9 71.9 20.6 2.3-16 8.6-26.9 15.6-33.1-54.9-6.3-112.6-27.4-112.6-121.8 0-26.9 9.6-49 25.4-66.2-2.6-6.3-11-31.8 2.4-66.3 0 0 20.7-6.6 67.8 25.3 19.7-5.5 40.8-8.2 61.8-8.3 21 0 42.1 2.8 61.8 8.3 47.1-31.9 67.8-25.3 67.8-25.3 13.4 34.5 5 60 2.4 66.3 15.8 17.2 25.4 39.3 25.4 66.2 0 94.6-57.8 115.5-112.9 121.6 8.9 7.6 16.9 22.5 16.9 45.2 0 32.6-.3 58.8-.3 66.8 0 6.5 4.5 14.2 16.9 11.8C425.2 458.1 496 365.3 496 256 496 119 385 8 248 8z"
+                      ></path>
+                    </svg>
+
+                  </a>
+                  <div class="text">Github</div>
+                </li>
+                <li class="iso-pro">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <a href="https://x.com/Khurd_Tejas">
+                    <svg
+                      class="social-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="#ffffff"
+                        d="M459.4 151.7c.32 4.54 .32 9.09 .32 13.63 0 138.72 -105.58 298.56 -298.56 298.56 -59.45 0 -114.68 -17.22 -161.14 -47.11 8.44 .97 16.87 1.45 25.64 1.45 49.11 0 94.25 -16.63 130.1 -44.83 -46.06 -.97 -84.83 -31.19 -98.11 -72.77 6.5 .97 13 .97 19.79 .97 9.42 0 18.84 -1.3 27.61 -3.58 -48.25 -9.74 -84.83 -52.17 -84.83 -103.12v-1.3c14.08 7.81 30.24 12.6 47.43 13.31 -28.26 -18.84 -46.78 -51.06 -46.78 -87.39 0 -19.42 5.2 -37.36 14.4 -52.92 52.35 64.3 130.73 106.49 219.03 111.13 -1.62 -7.81 -2.6 -15.94 -2.6 -24.06 0 -58.78 47.74 -106.49 106.49 -106.49 30.58 0 58.11 12.92 77.48 33.74 24.06 -4.77 46.78 -13.63 67.17 -25.64 -7.81 24.37 -24.37 44.83 -46.06 57.86 21.36 -2.28 41.83 -8.21 60.64 -16.32-14.24 21.04 -32.12 39.57 -52.73 54.47z"
+                      ></path>
+                    </svg>
+
+
+                  </a>
+                  <div class="text">Twitter</div>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class="contact-grid">
-            <div class="contact-info">
+          <div class="social-content">
+            <div class="social-write-up">
               <h3>Professional Contact</h3>
-              <p class="contact-text">
+              <p>
                 I'm available for internships, entry-level positions, and
                 project collaborations. Feel free to reach out to discuss
                 opportunities or technical projects.
               </p>
+            </div>
 
-              <div class="contact-item">
-                <div class="contact-item-icon">
-                  <i class="bi bi-envelope"></i>
-                </div>
-                <div class="contact-item-content">
+            <div class="social-write-up-cards">
+              <div class="social-write-up-card">
+                <i class="bi bi-envelope"></i>
+                <div class="social-write-up-content-card">
                   <h4>Email</h4>
                   <p>tejaskhurd.dev@gmail.com</p>
                 </div>
               </div>
 
-              <div class="contact-item">
-                <div class="contact-item-icon">
-                  <i class="bi bi-mortarboard"></i>
-                </div>
-                <div class="contact-item-content">
+              <div class="social-write-up-card">
+                <i class="bi bi-mortarboard"></i>
+                <div class="social-write-up-content-card">
                   <h4>Education</h4>
                   <p>Computer Engineering, Vidyavardhini College</p>
                 </div>
               </div>
 
-              <div class="contact-item">
-                <div class="contact-item-icon">
-                  <i class="bi bi-briefcase"></i>
-                </div>
-                <div class="contact-item-content">
+              <div class="social-write-up-card">
+                <i class="bi bi-suitcase-lg"></i>
+                <div class="social-write-up-content-card">
                   <h4>Availability</h4>
                   <p>Open to internships and opportunities</p>
                 </div>
-              </div>
-
-              <div class="social-links">
-                <a
-                  href="mailto:tejaskhurd.dev@gmail.com"
-                  class="social-link"
-                  title="Email"
-                >
-                  <i class="bi bi-envelope"></i>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/tejas-khurd/"
-                  class="social-link"
-                  target="_blank"
-                  title="LinkedIn"
-                >
-                  <i class="bi bi-linkedin"></i>
-                </a>
-                <a
-                  href="https://github.com/Tejas-Khurd-dev"
-                  class="social-link"
-                  target="_blank"
-                  title="GitHub"
-                >
-                  <i class="bi bi-github"></i>
-                </a>
               </div>
             </div>
           </div>
@@ -574,30 +694,34 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">Tejas Khurd</div>
-          <p class="footer-text">
-            Software Developer focused on building quality solutions
-          </p>
-          <div class="footer-links">
-            <a href="#home" class="footer-link">Home</a>
-            <a href="#about-me" class="footer-link">About</a>
-            <a href="#skills" class="footer-link">Skills</a>
-            <a href="#projects" class="footer-link">Projects</a>
-            <a href="#contact" class="footer-link">Contact</a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>
-            &copy; 2025 Tejas Khurd. Professional portfolio designed for clarity
-            and functionality.
-          </p>
-        </div>
+    <footer>
+      <div class="footer-center">
+        <h3>Tejas Khurd</h3>
+        <p>Software Developer focused on building quality solutions</p>
+      </div>
+
+      <div class="footer-list">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#skills-me">Skills</a></li>
+          <li><a href="#projects-me">Projects</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        <p>
+          © 2025 Tejas Khurd. Professional portfolio designed for clarity and
+          functionality.
+        </p>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
