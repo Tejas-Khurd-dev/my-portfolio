@@ -18,10 +18,6 @@ body, footer {
 }
 
 /* Navbar Styling */
-.tejas-logo {
-  color: white;
-}
-
 .navbar {
   background: rgba(10, 25, 41, 0.95) !important;
   backdrop-filter: blur(15px);
@@ -621,7 +617,7 @@ body, footer {
   }
 }
 
-/* Skills */
+/* ===================== Skills Section ===================== */
 .skill-btn-div {
   display: flex;
   justify-content: center;
@@ -823,7 +819,25 @@ body, footer {
   color: #cbd5e1;
 }
 
+/* Skills Section - Responsive */
+@media (max-width: 992px) {
+  .skill-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 2.5rem 3rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .skill-btn-div {
+    padding: 20px 10px;
+    padding-top: 80px;
+  }
+
+  .skill-center h2 {
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+
   .skill-container {
     grid-template-columns: 1fr;
     padding: 2rem 1.5rem;
@@ -835,8 +849,41 @@ body, footer {
   }
 }
 
+@media (max-width: 576px) {
+  .skill-btn-div {
+    padding: 15px 10px;
+    padding-top: 60px;
+  }
 
-/* Projects */
+  .skill-btn {
+    font-size: 16px;
+    padding: 0.7em 2em;
+    letter-spacing: 1px;
+  }
+
+  .skill-center h2 {
+    font-size: 1.8rem;
+  }
+
+  .skill-container {
+    padding: 1.5rem 1rem;
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .skill-btn {
+    font-size: 13px;
+    padding: 0.6em 1.5em;
+  }
+
+  .skill-center h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* ===================== Projects Section ===================== */
 .project-section {
   background-color: #1e293b;
   margin-top: 100px;
@@ -1093,7 +1140,44 @@ body, footer {
   font-size: 1.1rem;
 }
 
+/* Projects Section - Responsive */
+@media (max-width: 992px) {
+  .project-card-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 2.5rem 3rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .project-section {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .project-btn-div {
+    margin: 30px 0;
+  }
+
+  .project-btn {
+    font-size: 16px;
+    padding: 0.7em 2em;
+    margin-top: 60px;
+  }
+
+  .project-center {
+    margin: 20px 0;
+  }
+
+  .project-center h2 {
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+
+  .project-center p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
   .project-card-container {
     grid-template-columns: 1fr;
     padding: 2rem 1.5rem;
@@ -1105,17 +1189,61 @@ body, footer {
     min-height: 380px;
   }
 
-  .project-center h2 {
-    font-size: 2rem;
+  .card__links {
+    flex-direction: column;
+    gap: 0.8rem;
   }
 
-  .project-center p {
-    font-size: 1rem;
-    padding: 0 1rem;
+  .card__link {
+    width: 100%;
+    justify-content: center;
   }
 }
 
-/* Contact */
+@media (max-width: 576px) {
+  .project-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .project-btn {
+    font-size: 14px;
+    padding: 0.6em 1.8em;
+    margin-top: 40px;
+    letter-spacing: 1px;
+  }
+
+  .project-center h2 {
+    font-size: 1.8rem;
+  }
+
+  .project-card-container {
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .card__img {
+    height: 150px;
+  }
+
+  .card__img i {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .project-btn {
+    font-size: 13px;
+    padding: 0.6em 1.5em;
+  }
+
+  .project-center h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* ===================== Contact Section ===================== */
 .contact-btn-div {
   display: flex;
   justify-content: center;
@@ -1375,8 +1503,142 @@ body, footer {
   margin-right: 20px;
 }
 
+/* Contact Section - Responsive */
+@media (max-width: 992px) {
+  .social-flex {
+    margin: 40px 30px;
+  }
 
-/* Footer */
+  .social-links {
+    margin: 60px 50px;
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-btn-div {
+    padding-top: 30px;
+    margin: 30px 0;
+  }
+
+  .contact-btn {
+    font-size: 16px;
+    padding: 0.7em 2em;
+    margin-top: 30px;
+  }
+
+  .contact-center {
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+
+  .contact-center h2 {
+    font-size: 2rem;
+  }
+
+  .social-flex {
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 20px;
+  }
+
+  .social-links {
+    margin: 40px 20px;
+    margin-left: 20px;
+  }
+
+  .social-card {
+    margin-top: 30px;
+    margin-left: 0;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .social-write-up {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .social-write-up-card {
+    width: 100%;
+    margin: 15px 0;
+    padding: 12px 20px;
+  }
+
+  .social-write-up-card i {
+    font-size: 24px;
+    padding: 8px 12px;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-btn {
+    font-size: 14px;
+    padding: 0.6em 1.5em;
+    letter-spacing: 1px;
+  }
+
+  .contact-center h2 {
+    font-size: 1.8rem;
+  }
+
+  .social-flex {
+    margin: 20px 10px;
+  }
+
+  .social-links {
+    margin: 30px 10px;
+  }
+
+  .social-card {
+    max-width: 300px;
+  }
+
+  .social-write-up-card {
+    padding: 10px 15px;
+    margin: 10px 0;
+  }
+
+  .social-write-up-card i {
+    font-size: 20px;
+    padding: 6px 10px;
+    margin-right: 10px;
+  }
+
+  .social-write-up h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-btn {
+    font-size: 13px;
+    padding: 0.6em 1.5em;
+  }
+
+  .contact-center h2 {
+    font-size: 1.6rem;
+  }
+
+  .social-card {
+    max-width: 280px;
+  }
+
+  .social-write-up-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .social-write-up-card i {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+
+/* ===================== Footer Section ===================== */
 footer {
   background: rgba(10, 25, 41, 0.95) !important;
   padding: 50px 20px;
@@ -1429,24 +1691,25 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Footer Section - Responsive */
 @media (max-width: 768px) {
-  .social-flex {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .social-write-up-card {
-    width: 90%;
-    margin: 15px 0;
-  }
-
-  .social-write-up-content-card {
-    margin-left: 15px;
-    margin-top: 20px;
+  footer {
+    padding: 30px 15px;
   }
 
   .footer-list > ul {
     flex-direction: column;
     gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-list > ul > li > a {
+    font-size: 0.9rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+    padding: 8px 0;
   }
 }
