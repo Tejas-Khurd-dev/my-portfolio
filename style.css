@@ -10,7 +10,8 @@ header {
   z-index: 999;
 }
 
-body, footer {
+body,
+footer {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
   background: linear-gradient(135deg, #0a1929 0%, #1a2332 50%, #0d1b2a 100%);
@@ -204,7 +205,6 @@ body, footer {
   display: flex;
   gap: 3rem;
   animation: fadeInUp 0.8s ease 0.6s backwards;
-
 }
 
 .stat-item {
@@ -399,7 +399,6 @@ body, footer {
 .about-section {
   background-color: #1e293b;
   padding-top: 20px;
-
 }
 
 .about-center h2 {
@@ -483,7 +482,6 @@ body, footer {
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
-
 }
 
 .about-center p {
@@ -502,7 +500,6 @@ body, footer {
   margin-top: 40px;
   padding: 2rem 4rem;
   flex-wrap: wrap;
-
 }
 
 .about-content > div:first-child {
@@ -704,12 +701,16 @@ body, footer {
   margin: 0 auto;
 }
 
-/* From Uiverse.io by Fcodingx */ 
+/* From Uiverse.io by Fcodingx */
 .skill-card {
   width: 100%;
   min-height: 140px;
   padding: 1rem;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(37, 99, 235, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.15),
+    rgba(37, 99, 235, 0.1)
+  );
   border-radius: 16px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(59, 130, 246, 0.3);
@@ -843,7 +844,7 @@ body, footer {
     padding: 2rem 1.5rem;
     gap: 1.5rem;
   }
-  
+
   .skill-card {
     min-height: auto;
   }
@@ -881,7 +882,6 @@ body, footer {
     font-size: 1.6rem;
   }
 }
-
 
 /* ===================== Projects Section ===================== */
 .project-section {
@@ -987,7 +987,11 @@ body, footer {
   width: 100%;
   height: 420px;
   border-radius: 20px;
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.9));
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.9),
+    rgba(30, 41, 59, 0.9)
+  );
   backdrop-filter: blur(10px);
   border: 1px solid rgba(59, 130, 246, 0.3);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 20px rgba(59, 130, 246, 0.2);
@@ -1024,7 +1028,11 @@ body, footer {
 .card__img {
   width: 100%;
   height: 180px;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(37, 99, 235, 0.3));
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.2),
+    rgba(37, 99, 235, 0.3)
+  );
   border-radius: 20px 20px 0 0;
   display: flex;
   align-items: center;
@@ -1039,12 +1047,17 @@ body, footer {
   position: absolute;
   width: 150%;
   height: 150%;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(59, 130, 246, 0.3) 0%,
+    transparent 70%
+  );
   animation: pulse 3s ease-in-out infinite;
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
     opacity: 0.5;
   }
@@ -1140,6 +1153,12 @@ body, footer {
   font-size: 1.1rem;
 }
 
+.card-svg svg {
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Projects Section - Responsive */
 @media (max-width: 992px) {
   .project-card-container {
@@ -1183,7 +1202,7 @@ body, footer {
     padding: 2rem 1.5rem;
     gap: 2rem;
   }
-  
+
   .project-card {
     height: auto;
     min-height: 380px;
@@ -1241,7 +1260,6 @@ body, footer {
     font-size: 1.6rem;
   }
 }
-
 
 /* ===================== Contact Section ===================== */
 .contact-btn-div {
@@ -1319,11 +1337,10 @@ body, footer {
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
-
 }
 
-/* From Uiverse.io by MijailVillegas */ 
-.social-card{
+/* From Uiverse.io by MijailVillegas */
+.social-card {
   max-width: fit-content;
   border-radius: 15px;
   display: flex;
@@ -1437,7 +1454,6 @@ body, footer {
   transform: translate(10px, -10px);
 }
 
-
 .social-flex {
   display: flex;
   flex-wrap: wrap;
@@ -1471,7 +1487,11 @@ body, footer {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(96, 165, 250, 0.05));
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.2),
+    rgba(96, 165, 250, 0.05)
+  );
   opacity: 0;
   transition: opacity 0.3s ease;
   border-radius: inherit;
@@ -1637,7 +1657,6 @@ body, footer {
   }
 }
 
-
 /* ===================== Footer Section ===================== */
 footer {
   background: rgba(10, 25, 41, 0.95) !important;
@@ -1650,7 +1669,6 @@ footer {
   text-align: center;
   margin-bottom: 30px;
 }
-
 
 .footer-list {
   display: flex;
