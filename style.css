@@ -439,7 +439,7 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 60px;
-  padding: 20px;
+  padding: 35px;
 }
 
 .about-btn {
@@ -1768,3 +1768,4 @@ footer {
     padding: 8px 0;
   }
 }
+
